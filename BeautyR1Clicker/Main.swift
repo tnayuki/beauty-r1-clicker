@@ -71,7 +71,7 @@ final class BeautyR1Context {
     var onDeviceChange: (() -> Void)?
     /// Invoked right after a synthetic key has been posted (called from the IOKit callback thread).
     /// Used to flash the menu-bar icon as a press indicator.
-    var onSyntheticKeyEmit: (() -> Void)?
+    var onSyntheticKeyEmit: ((Direction) -> Void)?
 
     /// Last plausible X / Y observed outside of an active gesture.
     /// Beauty-R1 emits X / Y in the same report as tip=1, but for the Right button Y is
@@ -131,7 +131,7 @@ final class BeautyR1Context {
         guard inGesture, !gestureKeySent else { return false }
         guard let dir = directionFromAnchor() else { return false }
         postSyntheticKey(directionKey(for: dir))
-        onSyntheticKeyEmit?()
+        onSyntheticKeyEmit?(dir)
         gestureKeySent = true
         return true
     }

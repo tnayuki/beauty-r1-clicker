@@ -94,8 +94,8 @@ final class MenuBarController: NSObject, NSApplicationDelegate {
         ctx.onDeviceChange = { [weak self] in
             DispatchQueue.main.async { self?.updateUI() }
         }
-        ctx.onSyntheticKeyEmit = { [weak self] in
-            DispatchQueue.main.async { self?.flashKeyPress() }
+        ctx.onSyntheticKeyEmit = { [weak self] dir in
+            DispatchQueue.main.async { self?.flashKeyPress(dir) }
         }
 
         updateUI()
@@ -112,9 +112,9 @@ final class MenuBarController: NSObject, NSApplicationDelegate {
 
     /// Briefly switches the icon to the "active" (heavier) variant for ~0.12s as a
     /// visual confirmation that a synthetic key was emitted.
-    private func flashKeyPress() {
+    private func flashKeyPress(_ dir: Direction) {
         guard let btn = statusItem?.button else { return }
-        btn.image = ClickerStatusIcon.makeActiveTemplateImage()
+        btn.image = ClickerStatusIcon.makeActiveTemplateImage(direction: dir)
         applyStatusBarButtonAlpha()
 
         flashEndWork?.cancel()
