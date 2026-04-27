@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		33ADCA37986FBA7023CF874C /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1373A1F5F6869FD4BFCEDAF /* Carbon.framework */; };
 		34639B35BEC93F687842F003 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4261B56838952A7B6F4D3419 /* Localizable.strings */; };
+		AAAAAAAA000000000ASSETS2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAAAAAA000000000ASSETS1 /* Assets.xcassets */; };
 		58DA7DDAB6C5F4DBEE1AF814 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B509C259E1CDF5FF297AC5F /* IOKit.framework */; };
 		70D53497AF48B0EEA29AD3A3 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEDFB124D81AAD65BA21F58 /* AppKit.framework */; };
 		A2DB562F97622F5BF9CD1CE8 /* ClickerStatusIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A904B666888465DF3004FE09 /* ClickerStatusIcon.swift */; };
@@ -23,6 +24,7 @@
 		9681950FF57CE9C9504A88AF /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		99B97169BDB9EFE1312437B5 /* BeautyR1Clicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautyR1Clicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A904B666888465DF3004FE09 /* ClickerStatusIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerStatusIcon.swift; sourceTree = "<group>"; };
+		AAAAAAAA000000000ASSETS1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1373A1F5F6869FD4BFCEDAF /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		B147344006EC7C9ECF63A6CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FD6F01809C9FE60F53D57081 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		ABAE0DF307A1F940444CC1B9 /* BeautyR1Clicker */ = {
 			isa = PBXGroup;
 			children = (
+				AAAAAAAA000000000ASSETS1 /* Assets.xcassets */,
 				4261B56838952A7B6F4D3419 /* Localizable.strings */,
 				A904B666888465DF3004FE09 /* ClickerStatusIcon.swift */,
 				9681950FF57CE9C9504A88AF /* Main.swift */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34639B35BEC93F687842F003 /* Localizable.strings in Resources */,
+				AAAAAAAA000000000ASSETS2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
