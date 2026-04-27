@@ -183,8 +183,10 @@ private func startHIDManager(ctxPtr: UnsafeMutableRawPointer) -> IOHIDManager {
     )
     let r = IOHIDManagerOpen(manager, IOOptionBits(bitPattern: 0))
     if r != kIOReturnSuccess {
+        // Most commonly kIOReturnNotPermitted when Input Monitoring is not granted.
+        // Stay alive so the menu bar UI is reachable; the OS prompt will appear on
+        // first IOHIDDeviceOpen attempt, and the user can relaunch after granting.
         fputs("IOHIDManagerOpen failed: 0x\(String(r, radix: 16))\n", stderr)
-        exit(1)
     }
     return manager
 }
