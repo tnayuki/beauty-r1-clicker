@@ -11,8 +11,8 @@
 #   brew tap tnayuki/beauty-r1-clicker https://github.com/tnayuki/beauty-r1-clicker
 #   brew install --cask beauty-r1-clicker
 cask "beauty-r1-clicker" do
-  version "1.0.0"
-  sha256 "c93848770f1c7f6ff73ab593c11795acfa62c422c6f4f70b8635bfbc04692cc5"
+  version "1.1.0"
+  sha256 "216de7f735d01e8b3306d123363cade81ff42938ee084a5edd66b364f796a500"
 
   url "https://github.com/tnayuki/beauty-r1-clicker/releases/download/v#{version}/BeautyR1Clicker-#{version}.zip"
   name "Beauty-R1 Clicker"
