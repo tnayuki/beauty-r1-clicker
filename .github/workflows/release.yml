@@ -63,7 +63,7 @@ jobs:
         run: |
           cd "$APP_DIR"
           /usr/bin/ditto -c -k --sequesterRsrc --keepParent \
-            BeautyR1Clicker.app \
+            "Beauty-R1 Clicker.app" \
             "$GITHUB_WORKSPACE/BeautyR1Clicker-${VERSION}.zip"
 
       - name: Compute SHA256

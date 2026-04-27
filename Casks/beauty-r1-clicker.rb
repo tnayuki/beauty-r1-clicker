@@ -21,13 +21,13 @@ cask "beauty-r1-clicker" do
 
   depends_on macos: ">= :monterey"
 
-  app "BeautyR1Clicker.app"
+  app "Beauty-R1 Clicker.app"
 
   # The bundle is ad-hoc signed (no Developer ID); strip the quarantine xattr so
   # Gatekeeper doesn't block first launch.
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-d", "-r", "com.apple.quarantine", "#{appdir}/BeautyR1Clicker.app"],
+                   args: ["-d", "-r", "com.apple.quarantine", "#{appdir}/Beauty-R1 Clicker.app"],
                    sudo: false
   end
 
