@@ -1,0 +1,17 @@
+/* Menu bar — status line */
+"menu_starting" = "Starting…";
+
+/* Menu bar — submenu title */
+"menu_devices" = "Devices";
+
+/* No matching HID devices */
+"menu_none" = "(none)";
+
+/* Status: product name, connected count. %1$@ = filter name, %2$d = count */
+"status_connected" = "%1$@: Connected (%2$d)";
+
+/* Status: product name */
+"status_disconnected" = "%1$@: Not connected";
+
+/* Quit menu: %1$@ = app display name (e.g. "Beauty Clicker") */
+"menu_quit" = "Quit %1$@";

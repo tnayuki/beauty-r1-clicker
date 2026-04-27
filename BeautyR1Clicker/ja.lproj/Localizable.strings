@@ -1,0 +1,17 @@
+/* Menu bar — status line */
+"menu_starting" = "起動中…";
+
+/* Menu bar — submenu title */
+"menu_devices" = "デバイス";
+
+/* No matching HID devices */
+"menu_none" = "(なし)";
+
+/* Status: product name, connected count. %1$@ = filter name, %2$d = count */
+"status_connected" = "%1$@: 接続中 (%2$d)";
+
+/* Status: product name */
+"status_disconnected" = "%1$@: 未接続";
+
+/* Quit menu: %1$@ = app display name (e.g. "Beauty Clicker") */
+"menu_quit" = "%1$@ を終了";
