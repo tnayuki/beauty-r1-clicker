@@ -12,7 +12,7 @@
 #   brew install --cask beauty-r1-clicker
 cask "beauty-r1-clicker" do
   version "1.0.0"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "c93848770f1c7f6ff73ab593c11795acfa62c422c6f4f70b8635bfbc04692cc5"
 
   url "https://github.com/tnayuki/beauty-r1-clicker/releases/download/v#{version}/BeautyR1Clicker-#{version}.zip"
   name "Beauty-R1 Clicker"
