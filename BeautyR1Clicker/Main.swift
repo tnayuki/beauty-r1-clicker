@@ -18,10 +18,6 @@ enum BeautyR1ClickerApp {
         let ctxPtr = Unmanaged.passRetained(ctx).toOpaque()
         let manager = startHIDManager(ctxPtr: ctxPtr)
 
-        if let all = IOHIDManagerCopyDevices(manager) as? Set<IOHIDDevice> {
-            ctx.matchingDeviceCount = all.filter(deviceMatches).count
-        }
-
         MenuBarController.run(ctx: ctx, manager: manager)
     }
 }
